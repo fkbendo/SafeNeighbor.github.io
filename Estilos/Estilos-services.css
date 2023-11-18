@@ -1,0 +1,85 @@
+body::before
+{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100px;
+   background: rgba(0, 0, 0, 0.4);
+   z-index: -1;
+}
+
+body 
+{
+   background-color: #1B2B56;
+}
+#principal
+{
+   text-align: left;
+}
+
+.menuPrincipal 
+{
+   font-size: 50px;
+   padding: 0px 40px;
+   margin-left: 100px; 
+   text-decoration: none;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-transform: uppercase;
+   color: #6676AE;
+}
+.subtitulo 
+{
+   display: inline-block;
+   font-size: 45px;
+   margin-right: 30px;
+   padding: 0px 20px;
+   color: #FFFFFF;
+   text-decoration: none; /* Quitar la línea subrayada de los enlaces */
+}
+#que-te-ofrecemos
+{
+   text-align: right;
+}
+
+#que-te-ofrecemos .Texto-QueTeOfrecemos
+{
+   font-size: 70px;
+   font-weight: bold;
+   color: white;
+   font-family: 'Playfair Display', serif;
+   text-align: left;
+}
+
+#que-te-ofrecemos .Descripcion-QueTeOfrecemos {
+   font-size: 35px;
+   font-weight: normal;
+   color: white;
+   font-family: 'Playfair Display', serif;
+   text-align: left; /* Alinea el texto a la izquierda */
+   margin-top: 200px; /* Ajusta la distancia hacia arriba según tus preferencias */
+   display: flex; /* Utiliza un contenedor flexible para controlar la disposición */
+   justify-content: space-between; /* Coloca los elementos en los extremos */
+   align-items: center; /* Centra verticalmente los elementos en el contenedor */
+   background: rgba(0, 0, 0, 0); /* Fondo transparente */
+   padding: 20px; /* Espacio alrededor de la descripción */
+   box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+   width: 50%; /* Ancho del cuadro */
+   height: 50px; /* Alto del cuadro */
+}
+
+/* Estilos para la imagen en la derecha */
+#que-te-ofrecemos .Imagen-Contenedor
+ {
+   flex: 1; /* Ocupa el espacio disponible en el contenedor flexible */
+   text-align: right; /* Alinea la imagen a la derecha */
+   margin-top: -370px;
+}
+
+#que-te-ofrecemos .imagen
+ {
+   max-width: 100%; /* Asegura que la imagen no desborde su contenedor */
+   width: 950px; /* Ancho deseado de la imagen */
+   height: 850px; /* Alto deseado de la imagen */
+}
