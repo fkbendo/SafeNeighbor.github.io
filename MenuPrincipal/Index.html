@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menuPrincipal</title>
+    <link rel="stylesheet" href="Estilos/Estilos.css"> 
+    <link rel="imagenssheet" href="Imagenes/Portada.jpg"> 
+</head>
+<body style="background-image: url('Imagenes/Portada.jpg');background-size: cover;">
+    <nav>
+        <a href="#" class="menuPrincipal">SafeNeighbor</a>
+        <a href="servicios.html" class="subtitulo">Servicio</a>
+        <a href="noticias.html" class="subtitulo">Noticias</a>
+        <a href="contactanos.html" class="subtitulo">Contáctanos</a>
+        <a href="Nosotros.html" class="subtitulo">Acerca de Nosotros</a>
+
+        <div class="inicio-sesion">
+            <form action="procesar_inicio_sesion.php" method="post">
+                <div class="login-option">
+                    <button type="submit" name="loginWith" value="Google">
+                        <img src="Imagenes/Google svg.png" alt="Google"> Continuar con Google
+                    </button>
+                </div>
+                <div class="login-option">
+                    <button type="submit" name="loginWith" value="Facebook">
+                        <img src="Imagenes/Facebook svg.png" alt="Facebook"> Continuar con Facebook
+                    </button>
+                </div>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="usuario" placeholder="Tu correo electrónico">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Tu contraseña">
+                <input type="submit" value="Continuar">
+            </form>
+        </div>
+        
+    </nav>
+</body>
+</html>
